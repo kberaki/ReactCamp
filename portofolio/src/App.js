@@ -4,26 +4,35 @@ class App extends Component{
     super();
     this.state ={displayBio:false};
     console.log('component this', this)
-    this.readMore = this.readMore.bind(this);
-    this.showLess = this.showLess.bind(this);
+    //this.readMore = this.readMore.bind(this);
+    //this.showLess = this.showLess.bind(this);
+    this.toggleDisplayBio= this.toggleDisplayBio.bind(this);
   }
-  readMore(){
+  /*readMore(){
     console.log('readMore this', this);
     this.setState({ displayBio: true})
   }
   showLess(){
     this.setState({displayBio: false})
+  }*/
+  toggleDisplayBio(){
+    this.setState({displayBio:!this.state.displayBio})
   }
   render(){
     const bio = this.state.displayBio ?(
-<div>
+        <div>
         <p>I live in Bowie MD</p>
         <p>My favorite language is JavaScript, and I am excited about react</p>
-        <button onClick={this.showLess}>Show less</button>
+      <div>
+        <button onClick={this.toggleDisplayBio}>Show less</button>
+      </div>
       </div>
     ):(
-      <div>
+      /*<div>
         <button onClick={this.readMore} >Read more</button>
+      </div>*/
+      <div>
+        <button onClick={this.toggleDisplayBio}>Read more</button>
       </div>
     )
 
