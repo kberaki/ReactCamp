@@ -13,3 +13,17 @@ class Animal{
 }
 const animal1 = new Animal('Simba', 3);
 animal1.speak();
+class Lion extends Animal{
+constructor(name, age, furColor, speed){
+  super(name,age);
+  this.furColor = furColor;
+  this.speed = speed;
+}
+roar(){
+  console.log('My fur is', this.furColor, 'I can run', this.speed, 'miles per hour');
+}
+}
+const lion1 = new Lion('Jigna', 23, 'golden', 15);
+lion1.speak();
+lion1.roar();
+console.log(lion1)
