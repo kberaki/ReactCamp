@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
+import Projects from './Projects';
 class App extends Component{
   constructor(){
     super();
     this.state ={displayBio:false};
-    console.log('component this', this)
+    //console.log('component this', this)
     //this.readMore = this.readMore.bind(this);
     //this.showLess = this.showLess.bind(this);
     this.toggleDisplayBio= this.toggleDisplayBio.bind(this);
@@ -45,8 +46,11 @@ class App extends Component{
           <p> Coding to change to the world!</p>
       
       {bio}
+      <hr />
+     <Projects />
       </div>
     )
   }
+ 
 }
 export default App;
