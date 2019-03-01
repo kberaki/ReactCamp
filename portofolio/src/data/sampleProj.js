@@ -18,9 +18,9 @@ const PROJECTS =[{
 },
 {
   id:3,
-  title: 'Proactice server',
+  title: 'Practice server',
   description: 'This project was done with node.js and mangoDB',
-  link:'https://github.com/kberaki/ReactCamp/tree/master/portofolio/src',
+  link:'https://github.com/kberaki/practice-server',
   image:project3
 }];
 export default PROJECTS;

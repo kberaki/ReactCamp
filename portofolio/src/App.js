@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Projects from './Projects';
+//import profile from '.assets/profile.jpeg';
 class App extends Component{
   constructor(){
     super();
